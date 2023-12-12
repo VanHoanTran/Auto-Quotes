@@ -1,0 +1,20 @@
+[
+  {
+    "id": "endUser00001",
+    "name": "End User1",
+    "email": "end@user.com",
+    "phone": "+1 (234) 565-5543",
+    "password": "secret",
+    "isVerified": true,
+    "verificationCode": "88888888-4444-4444-121212121212",
+    "billingInformation": {
+      "name": "End User1",
+      "address1": "567 Front Street",
+      "address2": "",
+      "zip": "M5V 0A0",
+      "city": "Toronto",
+      "state": "ON",
+      "country": "Canada"
+    }
+  }
+]

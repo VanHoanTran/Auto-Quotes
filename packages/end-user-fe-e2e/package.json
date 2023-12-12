@@ -1,0 +1,17 @@
+{
+  "name": "@autoquotes/end-user-fe-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "Auto Quotes e2e tests for the end-user UI",
+  "dependencies": {
+    "@autoquotes/common-e2e": "^0.0.1",
+    "@autoquotes/end-user-fe": "^0.0.1",
+    "@autoquotes/libraries": "^0.0.1",
+    "cypress": "^12.8.1"
+  },
+  "scripts": {
+    "dev": "cypress open",
+    "e2e": "cypress run --headless --browser chrome"
+  }
+}

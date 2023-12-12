@@ -1,0 +1,122 @@
+{
+  "name": "autoquotes",
+  "version": "0.0.1",
+  "description": "Monorepo for Capstone project - Seneca SIA CPA PRJ666 course, winter 2023",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "engines": {
+    "node": "^18",
+    "yarn": "^1.22.19"
+  },
+  "main": "init.js",
+  "dependencies": {
+    "@rescripts/cli": "^0.0.16",
+    "react-scripts": "5.0.1",
+    "rescripts-use-yarn-workspaces": "^1.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lerna": "^6.6.0",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "start-server-and-test": "^2.0.0"
+  },
+  "scripts": {
+    "build": "yarn run enduser:build && yarn run shop:build && yarn run thirdp:build",
+    "start": "yarn --cwd packages/back-end start",
+    "test": "yarn run enduser:e2e:start && yarn run shop:e2e:start && yarn run thirdp:e2e:start",
+    "backend:dev": "yarn --cwd packages/back-end dev",
+    "enduser:dev": "start-test backend:dev http://127.0.0.1:8080/api enduser:dev:fe",
+    "enduser:dev:fe": "yarn --cwd packages/end-user-fe dev",
+    "enduser:build": "yarn --cwd packages/end-user-fe build",
+    "enduser:e2e": "yarn --cwd packages/end-user-fe-e2e e2e",
+    "enduser:e2e:dev": "yarn --cwd packages/end-user-fe-e2e dev",
+    "enduser:e2e:dev:start": "BROWSER=none start-test backend:dev http://127.0.0.1:8080/api enduser:dev:fe http://127.0.0.1:3000 enduser:e2e:dev",
+    "enduser:e2e:start": "BROWSER=none start-test backend:dev http://127.0.0.1:8080/api enduser:dev:fe http://127.0.0.1:3000 enduser:e2e",
+    "shop:dev": "start-test backend:dev http://127.0.0.1:8080/api shop:dev:fe",
+    "shop:dev:fe": "yarn --cwd packages/mechanic-shop-fe dev",
+    "shop:build": "yarn --cwd packages/mechanic-shop-fe build",
+    "shop:e2e": "yarn --cwd packages/mechanic-shop-fe-e2e e2e",
+    "shop:e2e:dev": "yarn --cwd packages/mechanic-shop-fe-e2e dev",
+    "shop:e2e:dev:start": "BROWSER=none start-test backend:dev http://127.0.0.1:8080/api shop:dev:fe http://127.0.0.1:3000 shop:e2e:dev",
+    "shop:e2e:start": "BROWSER=none start-test backend:dev http://127.0.0.1:8080/api shop:dev:fe http://127.0.0.1:3000 shop:e2e",
+    "thirdp:dev": "start-test backend:dev http://127.0.0.1:8080/api thirdp:dev:fe",
+    "thirdp:dev:fe": "yarn --cwd packages/third-party-fe dev",
+    "thirdp:build": "yarn --cwd packages/third-party-fe build",
+    "thirdp:e2e": "yarn --cwd packages/third-party-fe-e2e e2e",
+    "thirdp:e2e:dev": "yarn --cwd packages/third-party-fe-e2e dev",
+    "thirdp:e2e:dev:start": "BROWSER=none start-test backend:dev http://127.0.0.1:8080/api thirdp:dev:fe http://127.0.0.1:3000 thirdp:e2e:dev",
+    "thirdp:e2e:start": "BROWSER=none start-test backend:dev http://127.0.0.1:8080/api thirdp:dev:fe http://127.0.0.1:3000 thirdp:e2e",
+    "clean": "lerna run clean && lerna clean --yes && rimraf ./node_modules",
+    "format": "prettier --write .",
+    "lint": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" --fix-type problem",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadolhay/AutoQuotes.git"
+  },
+  "contributors": [
+    {
+      "name": "Arman Valaee Asr",
+      "email": "avalaee-asr@myseneca.ca"
+    },
+    {
+      "name": "Denes Adam Dolhay",
+      "email": "dadolhay@myseneca.ca"
+    },
+    {
+      "name": "Van Hoan Tran",
+      "email": "tvan-hoan@myseneca.ca"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/dadolhay/AutoQuotes/issues"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix --fix-type problem",
+      "prettier --write"
+    ]
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "packages/libraries/node_modules",
+    "packages/common/node_modules",
+    "packages/back-end/node_modules",
+    "packages/end-user-fe/node_modules",
+    "packages/mechanic-shop-fe/node_modules",
+    "packages/third-party-fe/node_modules"
+  ]
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "quoteforqndu",
+    "customerId": "endUser00001",
+    "vehicleTypeId": "TeslaModelS9",
+    "lineItems": [
+      {
+        "serviceTypeId": "TireRotation",
+        "selectedParts": []
+      },
+      {
+        "serviceTypeId": "BreakJobFron",
+        "selectedParts": [
+          {
+            "id": "FrontBreakPa",
+            "name": "Front break pads",
+            "manufacturer": "Tesla",
+            "type": "OEM",
+            "warrantyMonths": 12,
+            "price": 50
+          }
+        ]
+      },
+      {
+        "serviceTypeId": "BreakJobRear",
+        "selectedParts": [
+          {
+            "id": "RearBreakPad",
+            "name": "Rear break pads",
+            "manufacturer": "Tesla",
+            "type": "OEM",
+            "warrantyMonths": 12,
+            "price": 50
+          }
+        ]
+      }
+    ],
+    "isFinalized": true
+  },
+  {
+    "id": "customQuote1",
+    "customerId": "endUser00001",
+    "vehicleTypeId": "TeslaModelS9",
+    "lineItems": [
+      {
+        "serviceTypeId": "MCU3upgrade1",
+        "selectedParts": []
+      },
+      {
+        "serviceTypeId": "APv3Upgrade1",
+        "selectedParts": []
+      },
+      {
+        "serviceTypeId": "scrollComp01",
+        "selectedParts": []
+      }
+    ],
+    "isFinalized": false
+  }
+]

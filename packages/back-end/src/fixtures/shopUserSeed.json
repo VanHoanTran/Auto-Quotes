@@ -1,0 +1,18 @@
+[
+  {
+    "id": "TestSUser001",
+    "name": "John Doe",
+    "email": "jd1@a.com",
+    "phone": "+1 (437) 952-3322",
+    "password": "secret",
+    "role": "admin"
+  },
+  {
+    "id": "TestSUser002",
+    "name": "Jane Doe",
+    "email": "jd2@a.com",
+    "phone": "+1 (437) 952-3322",
+    "password": "secret",
+    "role": "employee"
+  }
+]

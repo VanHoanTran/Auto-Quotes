@@ -1,0 +1,28 @@
+{
+  "name": "@autoquotes/back-end",
+  "version": "0.0.1",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "Auto Quotes backe-end",
+  "dependencies": {
+    "@autoquotes/libraries": "^0.0.1",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "5.0.0-beta.1",
+    "forever": "^4.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "luxon": "3.3.0",
+    "mongodb-memory-server": "^8.12.1",
+    "mongoose": "^6.9.0",
+    "nodemailer": "6.9.1",
+    "nodemon": "^2.0.22",
+    "sha1": "^1.1.1",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "start": "forever --minUptime 1000 --spinSleepTime 5000 src/production.js",
+    "dev": "nodemon node src/development.js"
+  }
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "TireRotation",
+    "name": "Tire rotation",
+    "timeInMinutes": 30,
+    "description": "",
+    "requiredParts": [],
+    "compatibleVehicles": []
+  },
+  {
+    "id": "BreakJobFron",
+    "name": "Break pads replacement - Front axle",
+    "timeInMinutes": 45,
+    "description": "",
+    "requiredParts": [{ "name": "Front break pads" }],
+    "compatibleVehicles": []
+  },
+  {
+    "id": "BreakJobRear",
+    "name": "Break pads replacement - Rear axle",
+    "timeInMinutes": 45,
+    "description": "",
+    "requiredParts": [{ "name": "Rear break pads" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Suspension Alignment",
+    "timeInMinutes": 60,
+    "description": "",
+    "requiredParts": [],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Software redeploy",
+    "timeInMinutes": 90,
+    "description": "Remove and reinstall OS on vehicle",
+    "requiredParts": [],
+    "compatibleVehicles": []
+  },
+  {
+    "id": "WiperBlade01",
+    "name": "Wiper blade replacement",
+    "timeInMinutes": 5,
+    "description": "",
+    "requiredParts": [{ "name": "Wiper blade" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Door handle mechanics rebuild",
+    "timeInMinutes": 90,
+    "description": "Model S self-presenting handle mechanics fix",
+    "requiredParts": [{ "name": "Door handle rebuild kit" }],
+    "compatibleVehicles": [{ "make": "Tesla", "model": "Model S" }]
+  },
+  {
+    "name": "Cabin air Filter Replacement",
+    "timeInMinutes": 10,
+    "description": "",
+    "requiredParts": [{ "name": "Cabin air filter" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Pre-rurchase inspection",
+    "timeInMinutes": 60,
+    "description": "80 point inspection",
+    "requiredParts": [],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "12V battery Replacement",
+    "timeInMinutes": 20,
+    "description": "Low voltage lead-acid battery replacement",
+    "requiredParts": [{ "name": "12V battery" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Charge port replacement",
+    "timeInMinutes": 30,
+    "description": "Replace broken charge port",
+    "requiredParts": [{ "name": "Charge port assembly" }],
+    "compatibleVehicles": []
+  },
+  {
+    "id": "MCU3upgrade1",
+    "name": "Upgrade to MCU3",
+    "timeInMinutes": 150,
+    "description": "Media control unit (Amd Ryzen)",
+    "requiredParts": [{ "name": "MCU 3 computer" }],
+    "compatibleVehicles": []
+  },
+  {
+    "id": "APv3Upgrade1",
+    "name": "Upgrade to AP computer v3",
+    "timeInMinutes": 150,
+    "description": "Upgrade to FSD computer",
+    "requiredParts": [{ "name": "AP computer v3" }],
+    "compatibleVehicles": []
+  },
+  {
+    "id": "scrollComp01",
+    "name": "Heat pump replacement",
+    "timeInMinutes": 60,
+    "description": "Replace heat pump scroll compressor",
+    "requiredParts": [{ "name": "Scroll compressor" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "HV battery inspection",
+    "timeInMinutes": 30,
+    "description": "Re-certify vehicle for DC fast charging after Battery pack damage",
+    "requiredParts": [{ "name": "HV battery pack" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Front shock replacement",
+    "timeInMinutes": 120,
+    "description": "Replace shocks on the front axle",
+    "requiredParts": [{ "name": "Front shocks" }],
+    "compatibleVehicles": []
+  },
+  {
+    "name": "Rear shock replacement",
+    "timeInMinutes": 120,
+    "description": "Replace shocks on the rear axle",
+    "requiredParts": [{ "name": "Rear shocks" }],
+    "compatibleVehicles": []
+  }
+]
